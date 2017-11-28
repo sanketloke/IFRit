@@ -216,6 +216,7 @@ void *threadStartFunc(void *data){
       if(threadAvailability[i]==0){
         threadID = i;
         threadAvailability[i]=1;
+	break;
       }
       else{
         continue;
